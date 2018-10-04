@@ -14,12 +14,14 @@
   "author": "pathipatisureshkumar",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.26.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -27,5 +29,11 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
   }
 }
